@@ -25,6 +25,7 @@ steps:
     targetType: 'inline'
     script: 'ls -R $(Build.SourcesDirectory)/output'
 
+
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
