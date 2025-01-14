@@ -21,11 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-# Debugging: List files in the target directory
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'ls -R $(Build.SourcesDirectory)/target'
 
 # Copy .war files to the artifact staging directory
 - task: CopyFiles@2
